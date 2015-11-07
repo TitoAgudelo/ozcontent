@@ -1,0 +1,26 @@
+<div ng-controller="stopWordsController" class="jumbotron">
+	<div ng-hide="list">
+		<h1>Welcome to stop words test</h1>
+		<p>This is the list of stop words please enter in the next box and click in validate for verify your text can remove stop words</p>
+		<p>
+			<a class="btn btn-primary btn-lg" href="http://jmlr.csail.mit.edu/papers/volume5/lewis04a/a11-smart-stop-list/english.stop" target="_blank" role="button">List stop words</a>
+			<span class="btn btn-success btn-lg" role="button" ng-click="list=true">proceed</span>
+		</p>
+	</div>
+	<div ng-show="list">
+		<p>Please enter a text for validate it.</p>
+		<textarea class="text-validate" ng-model="word"></textarea>
+		<p class="alert" ng-show="error">please enter a text in the box</p>
+		<p>
+			<span class="btn btn-success btn-lg" ng-click="validate()">Validate</span>
+			<span class="btn btn-info btn-lg" ng-click="list=false">Come back</span>
+		</p>
+		<div class="result">
+			<p ng-hide="resultAlert">Not stop words in list</p>
+			<p class="label label-success">Result: {{result}}</p>
+			<div ng-hide="wordDelete">
+				<p class="label label-danger">This words was deleted: {{wordsDel}}</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+/* line 2, ../../sass/sections/stop.sass */
+.jumbotron .btn {
+  margin: 10px;
+}
+/* line 5, ../../sass/sections/stop.sass */
+.jumbotron .text-validate {
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-height: 100px;
+}
+/* line 13, ../../sass/sections/stop.sass */
+.jumbotron .alert {
+  background-color: #C03C38;
+  color: white;
+  padding: 10px;
+}
+/* line 18, ../../sass/sections/stop.sass */
+.jumbotron p {
+  display: block;
+}
